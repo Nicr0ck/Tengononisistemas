@@ -1,0 +1,36 @@
+#Entrevista con el Product Owner: Walter Pinto Rolón
+Entrevistador: Hola, Walter. Gracias por tomarte el tiempo para hablar conmigo hoy. Quiero asegurarme de que tenemos una comprensión clara de tus expectativas para el nuevo sistema de gestión de paintball. ¿Te parece bien si empezamos con algunas preguntas sobre los requerimientos que hemos recopilado?
+
+Walter Pinto Rolón: Hola, claro, no hay problema. Adelante con las preguntas.
+
+Entrevistador: Perfecto. Empecemos con la gestión de turnos. Entendemos que los turnos actualmente se manejan con Excel y que esto ha causado algunos problemas. ¿Podrías explicar un poco más sobre cuáles son los principales desafíos que enfrentan con el sistema actual?
+
+Walter Pinto Rolón: Sí, el mayor problema es la falta de visibilidad y la facilidad para cometer errores. Con Excel, es fácil sobreponer reservas por accidente, y no tenemos una manera rápida de ver la disponibilidad de turnos, especialmente cuando se trata de varias sucursales. Además, el proceso es manual, lo que consume mucho tiempo para nuestros empleados.
+
+Entrevistador: Entiendo. Entonces, un sistema que pueda manejar los turnos de manera automatizada, evitar superposiciones y mostrar la disponibilidad en tiempo real sería una mejora significativa. ¿Te gustaría que este sistema tenga alguna funcionalidad específica para cuando un turno esté a punto de comenzar o finalizar?
+
+Walter Pinto Rolón: Sería muy útil que el sistema pudiera enviar notificaciones o alertas, tanto para los empleados como para los jugadores, para recordarles que su turno está por comenzar o que tienen que prepararse para el siguiente grupo. También nos gustaría que el sistema bloquee automáticamente los turnos que ya están ocupados.
+
+Entrevistador: Perfecto, eso ayudará a mantener el flujo de juegos sin interrupciones. Ahora, hablemos sobre las reservas con balas y equipamiento adicional. ¿Cómo manejan actualmente la venta de estos extras y qué esperas que mejore el nuevo sistema?
+
+Walter Pinto Rolón: Ahora mismo, los extras se agregan de forma manual en las hojas de cálculo, lo que deja margen para errores. Queremos que el nuevo sistema permita a los empleados agregar fácilmente balas y equipamiento extra a las reservas. También sería ideal si el sistema puede sugerir estos extras al momento de hacer la reserva, para aumentar las ventas.
+
+Entrevistador: Entendido. Entonces, incluir sugerencias automáticas de balas adicionales y equipamiento podría mejorar las ventas. En cuanto a los precios, sabemos que varían por sucursal. ¿Podrías explicar cómo manejan estas variaciones y qué esperas del nuevo sistema en este aspecto?
+
+Walter Pinto Rolón: Actualmente, cada sucursal gestiona sus precios de manera independiente, lo que a veces causa confusión cuando los clientes hacen reservas por teléfono o en persona. Queremos que el sistema centralice esta información y permita a cada sucursal configurar sus precios sin afectar a las demás. Además, sería útil que el sistema aplique automáticamente descuentos o promociones.
+
+Entrevistador: Excelente. Pasemos a las ganancias y la generación de facturas. ¿Cómo monitorean actualmente las ganancias y qué esperas que el nuevo sistema haga mejor?
+
+Walter Pinto Rolón: Ahora mismo, es bastante complicado juntar todos los datos de las diferentes sucursales y generar un reporte claro. Queremos que el nuevo sistema haga esto automáticamente, generando facturas y reportes de ganancias que se puedan filtrar por fecha, sucursal, o tipo de servicio. Esto debería simplificar mucho nuestro proceso de contabilidad.
+
+Entrevistador: Claro, tener todo centralizado y automatizado debería hacer que el proceso sea mucho más eficiente. Finalmente, sobre el perfil de administrador, ¿hay alguna funcionalidad o nivel de control que consideres crucial?
+
+Walter Pinto Rolón: Sí, el administrador debe tener acceso total para modificar o eliminar reservas, ajustar precios, y ver todos los reportes de ganancias. También sería bueno que el administrador pueda gestionar usuarios, es decir, crear, modificar o eliminar cuentas de empleados dentro del sistema.
+
+Entrevistador: Perfecto, eso nos da una visión clara de lo que se necesita. Para cerrar, ¿hay algo más que consideres importante que el sistema incluya o alguna preocupación que tengas?
+
+Walter Pinto Rolón: Mi única preocupación es que el sistema sea fácil de usar para nuestros empleados. No todos están familiarizados con la tecnología, así que la interfaz debe ser lo más intuitiva posible.
+
+Entrevistador: Lo entiendo, nos aseguraremos de que el sistema sea sencillo de usar. Gracias, Walter, por toda esta información. Esto nos ayudará a crear una solución que realmente cumpla con las necesidades de "Balines Mojados".
+
+Walter Pinto Rolón: Gracias a ti. Espero ver cómo avanza el proyecto.
