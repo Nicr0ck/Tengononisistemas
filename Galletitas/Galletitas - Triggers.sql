@@ -24,3 +24,11 @@ BEGIN
 	END IF;
 END //
 
+DELIMITER //
+CREATE TRIGGER CrearGalles
+AFTER INSERT ON pedidos
+FOR EACH ROW
+BEGIN
+	INSERT INTO galletitas(ID_PEDIDO, Estado, Hora_Chequeo, Etapa_Chequeo) VALUES
+    (NEW.ID,"Sin revisar",NOW(),"Empaquetado");
+END //

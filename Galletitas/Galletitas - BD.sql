@@ -34,11 +34,19 @@ Hora_Rotura DATETIME,
 Etapa_Rotura varchar(50),
 foreign key (ID_Galletitas) references Galletitas(ID)
 );
+-- tabla camioneros para ver quien maneja el camion
+create table Camioneros(
+ID int auto_increment primary key,
+Nombre varchar(50),
+DNI int(8)
+);
 -- Aca se iria actualizando la localizacion y hora en la que se actualizo por ultima vez esta misma.
 create table Camiones(
 ID int auto_increment primary key,
 Localizacion varchar(50),
-Hora DATETIME
+Hora DATETIME,
+ID_Camionero int,
+foreign key (ID_Camionero) references Camioneros(ID)
 );
 -- Entregas necesita: referenciar el pedido, el estado de las galletitas, hora de salida, hora de entrega, opinion del cliente(tendria 3 tipos de estados: 1-10, Comentario, Devuelto o no)
 create table Entregas(
