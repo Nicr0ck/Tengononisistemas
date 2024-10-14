@@ -10,6 +10,7 @@ include 'config/config.php';
 </head>
 <body>
     <h1>Registro de Camiones</h1>
+    <a href="index.html">Menu</a>
     <?php 
     $sql = "
     SELECT 
