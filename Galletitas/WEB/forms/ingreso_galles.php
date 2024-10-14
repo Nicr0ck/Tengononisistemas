@@ -1,3 +1,6 @@
+<?php
+require_once "../config/config.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +13,51 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <h1>Ingreso de Pedido</h1>
+    <style>
+        tr {
+            border: 1px;
+        }
+        td{
+            border: white;
+        }
+    </style>
+    <h1>Ingreso de Galletitas</h1>
+    <a href="../MenuPedidos.html">Menu de Pedidos</a>
+    <div class="container mt-5">
+        <form action="../acciones/insert_pedido.php" method="post" class="mt-4">
+            <table class="table table-form">
+                <tr>
+                    <td>
+                        <h3>Datos del Pedido</h3>
+                    </td>
+                <tr>
+                    <td>
+                    <label for="ID_Cliente" class="form-label">Cliente:</label>
+                    <select name="ID_Cliente" id="ID_Cliente" class="form-select">
+                        <?php
+                        $sql = "SELECT * FROM clientes;";
+                        $result = $conn->query($sql);
+                        while ($row_client = mysqli_fetch_array($result)) {
+                            echo "
+                            <option value='" . htmlspecialchars($row_client['ID']) . "'>" . htmlspecialchars($row_client['Nombre']) . " " . htmlspecialchars($row_client['Apellido']) . " - " . htmlspecialchars($row_client['Localidad']) .  " - " . htmlspecialchars($row_client['Direccion']) . "</option>
+                            ";
+                        }
+                        ?>
+                    </select>
+                    </td>
+                    </tr><tr>
+                    <td>
+                        <label for="Cantidad_Pallets" class="form-label">Cantidad de Pallets:</label>
+                        <input type="number" class="form-control form-control-sm" name="Cantidad_Pallets" placeholder="Cantidad de Pallets" min="1" max="999" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="btn">Realizar Pedido</button>
+                    </td>
+                </tr>
+            </table>
+
 </body>
+
 </html>
