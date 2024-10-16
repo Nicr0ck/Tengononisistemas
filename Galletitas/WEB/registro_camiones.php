@@ -36,16 +36,19 @@ include 'config/config.php';
                     <th>Nombre del Camionero</th>
                     <th>DNI del Camionero</th>
                     <th>ID del Pedido</th>
+                    <th>Cambio de Conductor</th>
                 </tr>";
         
         while($row = $result->fetch_assoc()) {
+            $IDCAM = $row["ID_Camion"];
             echo "<tr>
                     <td>" . $row["ID_Camion"] . "</td>
-                    <td>" . $row["Localizacion"] . "</td>
+                    <td><a href='forms/local_camion.php?id=$IDCAM'>" . $row["Localizacion"] . "</a></td>
                     <td>" . $row["Hora"] . "</td>
                     <td>" . $row["Nombre_Camionero"] . "</td>
                     <td>" . $row["DNI_Camionero"] . "</td>
                     <td>" . $row["ID_Pedido"] . "</td>
+                    <td><a href='forms/cambionero.php?id=$IDCAM'>Cambio</a></td>
                   </tr>";
         }
         echo "</table>";
@@ -55,5 +58,7 @@ include 'config/config.php';
 
     $conn->close();
     ?>
+    
 </body>
+
 </html>

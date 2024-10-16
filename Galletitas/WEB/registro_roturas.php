@@ -25,6 +25,7 @@ include 'config/config.php';
     JOIN Galletitas g ON r.ID_Galletitas = g.ID
     JOIN Pedidos p ON g.ID_Pedido = p.ID
     JOIN Clientes c ON p.ID_Cliente = c.ID
+    ORDER BY ID_Pedido;
     ";
 
     $result = $conn->query($sql);
