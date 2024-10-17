@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Camioneros - Gallesistema</title>
+</head>
+<body>
+    <h1>Ingreso de Camioneros</h1>
+    <a href="AsignarCamion.php">Asignacion</a>
+    <div class="container mt-5">
+        <form action="../acciones/insert_camionero.php" method="post" class="mt-4">
+            <table class="table table-form">
+                <tr>
+                    <td>
+                        <h3>Datos del conductor</h3>
+                    </td>
+                <tr>
+                    <td>
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control form-control-sm" name="nombre" placeholder="Nombre/s del Conductor" required>
+                    </td>
+                    <td>
+                        <label for="DNI" class="form-label" >DNI del Conductor:</label>
+                        <input type="tel" name="DNI" class="form-control form-control-sm" placeholder="DNI del Conductor" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="btn">Agregar Conductor</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>

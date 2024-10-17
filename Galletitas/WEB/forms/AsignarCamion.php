@@ -33,7 +33,7 @@ include"../config/config.php";
                         }
                         ?>
                     </select>
-                    <a href="ingreso_camionero.php">Agregar Conductor</a>
+                    <a href="ingreso_camionero.html">Agregar Conductor</a>
                     </td>
                     </tr><tr>
                     <td>
@@ -49,7 +49,7 @@ include"../config/config.php";
                         }
                         ?>
                     </select>
-                    <a href="ingreso_camion.php">Agregar Camion</a>
+                    <a href="../acciones/insert_camion.php">Agregar Camion</a>
                     </td>
                 </tr>
                 <tr>
