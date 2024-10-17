@@ -1,5 +1,7 @@
+-- Inserts semiobligatorios para que el sistema se vea y se sienta mejor
 use galletitas;
-insert into clientes (Nombre, Apellido, Telefono, Localidad, Direccion) values
-("Carlos","Perez","123456789","CABA","Camarones 2055");
-Insert into pedidos(Cantidad_Pallets, Fecha, ID_Cliente) values
-(30, NOW(),1);
+insert into camioneros values
+(0,"Nadie",);
+insert into entregas (ID) values
+(0);
+insert into camiones (ID) values (0);
