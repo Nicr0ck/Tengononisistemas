@@ -43,3 +43,13 @@ BEGIN
 		VALUES (NEW.ID_Pedido,NEW.ID, NOW());
 	END IF;
 END //
+
+DELIMITER //
+CREATE TRIGGER Destino
+AFTER UPDATE ON camiones
+FOR EACH ROW
+BEGIN
+	IF NEW.Localizacion LIKE "Destino" THEN
+		update entregas set Hora_Entrega = NOW() where ID_Camion=NEW.ID;
+        END IF;
+END //
