@@ -11,6 +11,8 @@ include 'config/config.php';
 <body>
     <h1>Registro de Camiones</h1>
     <a href="index.html">Menu</a>
+    <div></div>
+    <a href="forms/AsignarCamion.php">Asignar un Camion a un Pedido</a>
     <?php 
     $sql = "
     SELECT 
@@ -23,6 +25,7 @@ include 'config/config.php';
     FROM Camiones cam
     JOIN Camioneros cami ON cam.ID_Camionero = cami.ID
     JOIN Entregas e ON cam.ID = e.ID_Camion
+    ORDER BY ID_Camion
     ";
 
     $result = $conn->query($sql);
@@ -36,7 +39,6 @@ include 'config/config.php';
                     <th>Nombre del Camionero</th>
                     <th>DNI del Camionero</th>
                     <th>ID del Pedido</th>
-                    <th>Cambio de Conductor</th>
                 </tr>";
         
         while($row = $result->fetch_assoc()) {
@@ -48,7 +50,6 @@ include 'config/config.php';
                     <td>" . $row["Nombre_Camionero"] . "</td>
                     <td>" . $row["DNI_Camionero"] . "</td>
                     <td>" . $row["ID_Pedido"] . "</td>
-                    <td><a href='forms/cambionero.php?id=$IDCAM'>Cambio</a></td>
                   </tr>";
         }
         echo "</table>";
