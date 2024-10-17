@@ -32,3 +32,24 @@ BEGIN
 	INSERT INTO galletitas(ID_PEDIDO, Estado, Hora_Chequeo, Etapa_Chequeo) VALUES
     (NEW.ID,"Sin revisar",NOW(),"Empaquetado");
 END //
+
+DELIMITER //
+CREATE TRIGGER CrearEntrega
+AFTER UPDATE ON galletitas
+FOR EACH ROW
+BEGIN
+	IF NEW.Etapa_Chequeo LIKE "Carga de Pallets" THEN
+		INSERT INTO entregas (ID_Pedido,ID_Galletitas, Hora_Salida)
+		VALUES (NEW.ID_Pedido,NEW.ID, NOW());
+	END IF;
+END //
+
+DELIMITER //
+CREATE TRIGGER Destino
+AFTER UPDATE ON camiones
+FOR EACH ROW
+BEGIN
+	IF NEW.Localizacion LIKE "Destino" THEN
+		update entregas set Hora_Entrega = NOW() where ID_Camion=NEW.ID;
+        END IF;
+END //
