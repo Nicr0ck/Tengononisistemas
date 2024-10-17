@@ -33,6 +33,7 @@ include"../config/config.php";
                         }
                         ?>
                     </select>
+                    <a href="ingreso_camionero.php">Agregar Conductor</a>
                     </td>
                     </tr><tr>
                     <td>
@@ -48,6 +49,7 @@ include"../config/config.php";
                         }
                         ?>
                     </select>
+                    <a href="ingreso_camion.php">Agregar Camion</a>
                     </td>
                 </tr>
                 <tr>
@@ -73,7 +75,7 @@ include"../config/config.php";
                             <option value='" . htmlspecialchars($row_client['ID_Entrega']) . "'>" . htmlspecialchars($row_client['Nombre_Cliente']) . " " . htmlspecialchars($row_client['Apellido_Cliente']) . " - " . htmlspecialchars($row_client['Cantidad_Pallets']) . " Pallets - " . htmlspecialchars($row_client['Fecha_Pedido']) . "</option>
                             ";
                         }
-                        ?>
+                        ?>    
                     </select>
                     </td>
                 </tr>
