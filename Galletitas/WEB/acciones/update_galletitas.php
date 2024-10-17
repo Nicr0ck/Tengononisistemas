@@ -23,4 +23,3 @@ if (!empty($etapa) && !empty($estado) && !empty($ID)) {
 }
 
 $conn->close();
-?>

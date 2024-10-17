@@ -1,7 +1,5 @@
 <?php
 include "../config/config.php";
-
-// Aseguramos que el ID sea un entero
 $ID = intval($_GET["id"]);
 
 $sql = "SELECT 
@@ -20,7 +18,6 @@ $stmt->bind_param("i", $ID);
 $stmt->execute();
 $result = $stmt->get_result();
 
-// Verificamos si se encontró alguna fila
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $num = $row["ID_Camion"];
@@ -41,13 +38,14 @@ if ($result->num_rows > 0) {
 </head>
 <body>
     <h1>Localizacion del Camion</h1>
+    <a href="../registro_camiones.php">Registro de Camiones</a>
     <?php
     echo "
-    <h3>Donde está el camión $num</h3>
+    <h3>Donde se encuentra el camión $num</h3>
     <div>Conductor: $nombre</div>    
+    <form action='../acciones/update_local.php?id=$ID' method='post'>
     ";
     ?>
-    <form action="../acciones/local_camion.php">
         <label for="Localizacion">Localizacion: </label>
         <?php
         echo"
